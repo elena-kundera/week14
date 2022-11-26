@@ -1,7 +1,4 @@
 
-// 1. Перепишите домашнее задание прошлой недели c помощью **input** для ввода данных 
-// и **div** (либо **input**) для вывода результата
-
 // 2. Напишите скрипт, который меняет фон div-ов по клику на них
 
 // 3. Напишите простую галерею на 2+ картинки с кнопками Вперед и Назад 
@@ -63,4 +60,11 @@ function getCalcValueDivis() {
 }
 
 
+
+function changeColor ()
+{
+    let newColor = document.getElementById('divColor');
+    newColor.style.backgroundColor = 'rgb(220, 171, 255)';
+    setTimeout(() => newColor.style.background = "", 1500);
+}
 
