@@ -1,5 +1,4 @@
 
-// 2. Напишите скрипт, который меняет фон div-ов по клику на них
 
 // 3. Напишите простую галерею на 2+ картинки с кнопками Вперед и Назад 
 // (*она не должна работать идеально, это пока просто заготовка на будущее!*)
@@ -8,6 +7,8 @@
 // 4. Воспользовавшись дебаггером, пройдите по шагам все практическое домашнее задание. 
 // Если что-то не работает, попытайтесь понять, почему
 
+
+// ЗДОРОВАЛКА
 
 const data = document.querySelector('.data');
 const inputPage = document.getElementById("inputHi");
@@ -23,6 +24,7 @@ function getInputValue() {
 
 }
 
+// КАЛЬКУЛЯТОР
 
 const data2 = document.querySelector('.calcData');
 const inputOne = document.getElementById("calcInput1");
@@ -68,3 +70,16 @@ function changeColor ()
     setTimeout(() => newColor.style.background = "", 1500);
 }
 
+
+//ГАЛЕРЕЯ
+
+function nextPic() {
+
+    let newPic = document.getElementById('imgSwear');
+    newPic.src = 'assets/images/IMG_5069.jpg';
+}
+
+function previousPic() {
+    let prevPic = document.getElementById("imgSwear");
+    prevPic.src = 'assets/images/IMG_5070.jpg';
+}

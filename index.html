@@ -16,6 +16,19 @@
         justify-content: center;
         align-items: center;
     }
+
+    .imgContainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .img {
+        max-width: 20%;
+    }
+
+   
+
 </style>
 
 </head>
@@ -59,9 +72,30 @@
 <br>
 <br>
 
-<div class="magic" id="divColor" onclick="changeColor()"> <p> Кликни сюда -  и будет магия !</p> </div>
+<div class="magic" id="divColor" onclick="changeColor()"> 
+    <p> Кликни сюда -  и будет магия !</p> 
+</div>
 
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="imgContainer">
+
+<img class="img" onclick="previousPic()" src="assets/images/iconmonstr-arrow-left-alt-filled-240.png" alt="">
+<img class="img img1" id="imgSwear" src="assets/images/IMG_5068.jpg" alt="">
+
+<img class="img" onclick="nextPic()" src="assets/images/iconmonstr-arrow-right-alt-filled.svg" alt="">
+
+</div>
 
 
 
