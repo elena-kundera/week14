@@ -1,13 +1,5 @@
 
 
-// 3. Напишите простую галерею на 2+ картинки с кнопками Вперед и Назад 
-// (*она не должна работать идеально, это пока просто заготовка на будущее!*)
-
-
-// 4. Воспользовавшись дебаггером, пройдите по шагам все практическое домашнее задание. 
-// Если что-то не работает, попытайтесь понять, почему
-
-
 // ЗДОРОВАЛКА
 
 const data = document.querySelector('.data');
@@ -17,10 +9,9 @@ const btnPage = document.getElementById("btnHi");
 
 function getInputValue() {
 
-    console.log(inputPage.value);
     const userName = document.getElementById("inputHi").value;
-    data.innerHTML = "Привет, " + userName + ", приятно познакомиться!"
-    
+    data.innerHTML = "Привет, " + userName + ", приятно познакомиться!";
+    document.getElementById("inputHi").value = "";
 
 }
 
@@ -38,6 +29,8 @@ function getCalcValuePlus() {
     const num2 = Number(document.getElementById("calcInput2").value);
     const result = num1 + num2;
     data2.innerHTML = "Ответ: " + result;
+    document.getElementById("calcInput1").value = "";
+    document.getElementById("calcInput2").value = "";
 }
 
 function getCalcValueMinus() {
@@ -45,6 +38,8 @@ function getCalcValueMinus() {
     const num2 = Number(document.getElementById("calcInput2").value);
     const result = num1 - num2;
     data2.innerHTML = "Ответ: " + result;
+    document.getElementById("calcInput1").value = "";
+    document.getElementById("calcInput2").value = "";
 }
 
 function getCalcValueMult() {
@@ -52,6 +47,8 @@ function getCalcValueMult() {
     const num2 = Number(document.getElementById("calcInput2").value);
     const result = num1 * num2;
     data2.innerHTML = "Ответ: " + result;
+    document.getElementById("calcInput1").value = "";
+    document.getElementById("calcInput2").value = "";
 }
 
 function getCalcValueDivis() {
@@ -59,6 +56,8 @@ function getCalcValueDivis() {
     const num2 = Number(document.getElementById("calcInput2").value);
     const result = num1 / num2;
     data2.innerHTML = "Ответ: " + result;
+    document.getElementById("calcInput1").value = "";
+    document.getElementById("calcInput2").value = "";
 }
 
 
@@ -66,7 +65,7 @@ function getCalcValueDivis() {
 function changeColor ()
 {
     let newColor = document.getElementById('divColor');
-    newColor.style.backgroundColor = 'rgb(220, 171, 255)';
+    newColor.style.background = 'radial-gradient(violet 10%, pink 30%, blue)';
     setTimeout(() => newColor.style.background = "", 1500);
 }
 
